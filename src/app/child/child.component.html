@@ -1,0 +1,8 @@
+<br>
+<div class="row">
+    <div class="col-md-12 bg-success text-center py-4">
+        <h2 *ngIf="!productSelected">No Product is selected</h2>
+        <h2 *ngIf="productSelected">{{selectedProduct}} is selected</h2>
+        <button class="btn btn-primary" (click)="onAddedProduct()">Add to cart</button>
+    </div>
+</div>

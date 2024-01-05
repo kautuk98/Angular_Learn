@@ -1,0 +1,32 @@
+<div class="container text-bg-secondary text-center">
+    <h1 class="display-4">About Us</h1>
+
+    <hr>
+    <br>
+
+    <!-- <input type="text" placeholder="Input here." #input> -->
+    <!-- <button class="btn btn-success" (click)="takeInput(input)">Input</button> -->
+    <div #box>
+        <h1> User name is <span class="text-success"> {{username}}</span></h1>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <!-- <app-comp1 *ngIf="showComp" [myValue]="value" ></app-comp1> -->
+
+            <button (click)="changeName()">Change child name</button>
+            <button (click)="changeEvent()">Toggle child event</button>
+        </div>
+        <div class="col-md-6 bg-primary">
+            <app-comp2 #child></app-comp2>
+        </div>
+        <!-- <div class="col-md-6 bg-danger">
+            <app-comp1></app-comp1>
+        </div>
+        <div class="col-md-6 bg-info">
+            <app-comp1></app-comp1>
+        </div> -->
+    </div>
+<br><br>
+    <!-- <button class=" btn btn-danger" (click)="hideComp()">Destroy Component</button> -->
+</div>

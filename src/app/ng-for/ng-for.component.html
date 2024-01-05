@@ -1,0 +1,53 @@
+<div class="container">
+    <!-- <div class="row">
+    <div class="col-md-8">
+        <table class="table">
+            <thead class="thead-dark">
+                <th>Product Img</th>
+                <th>Product name</th>
+                <th>Product ID</th>
+                <th>Product Price</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mypro of products">
+                    <td><img src="{{mypro.proimg}}" width="70" alt=""></td>
+                    <td>{{mypro.name}}</td>
+                    <td>{{mypro.id}}</td>
+                    <td>{{mypro.price}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div> -->
+<br>
+    <div class="row">
+        <div class="col-md-3">
+            <input class="form-control" type="text" #uname placeholder="Username">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-success" (click)="onSubmitUser(uname)" > Create User </button>
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger" (click)="onRemoveUser()" > Delete User </button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+            <table class="table ">
+                <thead class="thead-dark">
+                    <th>Username</th>
+                </thead>
+                <br>
+                <tbody>
+                    <tr *ngFor="let user of users; index as i">
+                        <td>{{user.name}}</td>
+                        <td>
+                            <button class="btn btn-danger" (click)="onRemoveItem(i)" > Delete Item </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

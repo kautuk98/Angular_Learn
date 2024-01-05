@@ -1,0 +1,16 @@
+<div class="container bg-info">
+    <div class="row">
+        <div class="col-md-6">
+            <input type="text" placeholder="Enter name here" #user> &nbsp;
+            <button class="btn btn-success" (click)="onCreateUser(user)">Create user</button>
+            <p *ngIf="userCount">Total user count : {{userCount}}</p>
+        </div>
+    
+        <div class="col-md-6">
+            <input type="text" placeholder="Enter name here" #admin> &nbsp;
+            <button class="btn btn-success" (click)="onCreateAdmin(admin)">Create user</button>
+            <p *ngIf="adminCount">Total admin count : {{adminCount}}</p>
+        </div>    
+    </div>
+
+</div>
